@@ -41,7 +41,7 @@
         <span class="fb f18">{{reloadType}}</span>
       </div>
       <el-table class="mt-20 disinblock" :data="projectData" style="width: 100%">
-        <el-table-column align="center" prop="voltage_value" label="电压值/mV（MAX）" min-width="100"></el-table-column>
+        <el-table-column align="center" prop="voltage_value" label="脊背弯曲度" min-width="100"></el-table-column>
         <el-table-column align="center" label="脊背状态" width="80">
           <template slot-scope="scope">
             {{scope.row.marker_position}}
@@ -207,7 +207,7 @@ export default {
       },
       options: {
         title: {
-          text: '电压曲线'
+          text: '脊背弯曲度曲线'
         },
         grid: {
           top: 100,
@@ -215,7 +215,7 @@ export default {
           right: 50
         },
         legend: {
-          data: ['电压值']
+          data: ['脊背弯曲度']
         },
         tooltip: {
           trigger: 'axis',
@@ -234,7 +234,7 @@ export default {
         // yAxis: {},      纵轴自适应
         yAxis: {
           //纵轴标尺固定
-          name: '电压值/mV(MAX)',
+          name: '脊背弯曲度',
           type: 'value',
           boundaryGap: [0, '100%'],
           splitLine: {
@@ -243,7 +243,7 @@ export default {
         },
         series: [
           {
-            name: '电压值',
+            name: '脊背弯曲度',
             type: 'line',
             showSymbol: true,
             smooth: true,
