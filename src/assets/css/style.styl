@@ -1,0 +1,157 @@
+// 声明CSS常用变量
+body
+  font-family "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
+  margin 0
+  -webkit-font-smoothing antialiased
+  color fontColor
+  line-height 1.4
+  font-size 14px
+  height 100%
+
+.container-content
+  margin 0 auto
+  margin-top -40px
+  background-color #fff
+  position relative
+  width 98%
+  border-top-left-radius 10px
+  border-top-right-radius 10px
+  .main-content
+    width 90%
+    max-width 1200px
+    margin 30px auto 40px auto
+    display inline-block
+    .mobile-content
+      margin-bottom 10px
+      padding-right 10px
+
+::selection
+  background #008fd6
+  color #fff
+
+html
+  box-sizing border-box
+  height 100%
+
+
+*,*:before,*:after,*:focus
+  box-sizing inherit
+  outline none
+
+
+a:focus,a:active
+  outline none
+
+
+a,a:focus,a:hover
+  cursor pointer
+  color inherit
+  text-decoration none
+
+.container
+  width 85%
+  max-width 1200px
+  margin 0 auto
+
+.clearfix
+  &:after
+    visibility hidden
+    display block
+    font-size 0
+    content " "
+    clear both
+    height 0
+
+//vue router transition css
+.fade-enter-active,.fade-leave-active
+  transition all .2s ease
+
+
+.fade-enter,.fade-leave-active
+  opacity 0
+
+
+//main-container全局样式
+.app-main
+  min-height 100%
+
+
+.app-container
+  padding: 30px
+
+
+.svg-icon
+  width 1em
+  height 1em
+  vertical-align -0.15em
+  fill currentColor
+  overflow hidden
+
+li
+  list-style none
+ul
+  margin 0
+  padding 0
+input
+  outline none
+
+.no-content
+  color #b5b5b5
+  i
+    font-size 120px !important
+  div
+    margin-top -100px
+    color #b7b7b7
+
+ @media screen and (max-width: 767px)
+   .el-carousel__container
+     height 180px!important
+   .hidden-xs
+     display none!important
+   .icms-dialog
+     width 90%
+   .block-xs
+     display block!important
+   .show-xs
+     display block!important
+   .searchDialog
+     width 90%
+   .el-dialog__headerbtn .el-dialog__close
+     font-size 22px
+   .container
+     width 90%
+   .mobile-content
+     padding 0
+   .mt-20-xs
+     margin-top 20px
+   .mt-30-xs
+     margin-top 30px
+   .lists-header-top,.single-header-bg
+     background-size 300%!important
+     .lists-header-top-title
+       margin-top 80px!important
+   .yx-editor-show
+     img
+      width 100%
+      margin-top 15px
+ @media screen and (min-width: 768px) and (max-width: 1199px)
+  .hidden-md
+    display none!important
+  .show-md
+    display block
+  .lists-header-top
+    background-size 130%!important
+  .search-dialog
+    width 60%!important
+  .pr-media-0
+    padding-right 0!important
+ @media screen and (min-width: 1200px)
+   .el-dialog--small.icms-dialog
+     width 65%
+   .show-md
+     display block
+   .hidden-md
+     display none!important
+   .search-dialog
+     width 55%!important
+   
