@@ -8,6 +8,7 @@ import index from '../views/showPage/index.vue'
 import single from '../views/showPage/single.vue'
 import list from '../views/showPage/list.vue'
 import info from '../views/showPage/info.vue'
+import register from '../views/showPage/register.vue'
 
 export const mainRoutes = [
   {
@@ -25,6 +26,10 @@ export const mainRoutes = [
   {
     path: '/info',
     component: info
+  },
+  {
+    path: '/register',
+    component: register
   }
 ]
 

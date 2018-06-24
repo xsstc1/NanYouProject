@@ -12,6 +12,7 @@
         </el-form-item>
         <el-form-item class="mt-30">
           <el-button type="primary" @click="onSubmit">登 录</el-button>
+          <el-button type="warning" @click="onRegister">注 册</el-button>
         </el-form-item>
       </el-form>
 
@@ -55,6 +56,9 @@ export default {
   },
 
   methods: {
+    onRegister(){
+this.$router.push({path:'/register'});
+    },
     onSubmit() {
       if(!this.searchData.phone){
         this.$message.error("请输入手机号")
